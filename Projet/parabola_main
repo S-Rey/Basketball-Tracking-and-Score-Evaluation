@@ -1,0 +1,87 @@
+int main() {
+
+
+
+/*
+
+	Video video("../../input/tracking/basket_detection.txt");
+	vector<vector<Keyframe>> video_all = video.getAll();
+	KFilter kal(1.0/30.0, video_all);
+	Video output = kal.run();
+	output.writeDAE("../../output/DAE_files/", "K_vid");
+
+
+	Parabola parabola;
+	Video video_p(parabola.getVideo());
+	video_p.writeDAE("../../output/DAE_files/", "Parabola");
+
+	vector<vector<Keyframe>> video_k;
+
+	// create a 2D array to compute the kalman filter
+	for (int i = 0; i < video_p.getVideo().size(); i+=3) {
+		std::vector<Keyframe> tmp = {video_p.getVideo()[i]};
+		video_k.push_back(tmp);
+	}
+
+	KFilter k_parabola(1.0 / 30.0, video_k);
+	Video parabola_result = k_parabola.run();
+	parabola_result.writeDAE("../../output/DAE_files/", "K_Parabola");
+	parabola_result.writeOBJ("../../output/OBJ_files/", "K_Parabola", false);
+
+	// Random version
+
+	parabola.randomize(0.2);
+	video_p = parabola.getVideo();
+	video_p.writeDAE("../../output/DAE_files/", "R_Parabola");
+
+	video_k.clear();
+	// create a 2D array to compute the kalman filter
+	for (int i = 0; i < video_p.getVideo().size(); i+= 10) {
+		std::vector<Keyframe> tmp = {video_p.getVideo()[i]};
+		video_k.push_back(tmp);
+	}
+
+	KFilter r_k_parabol(1.0/30.0, video_k);
+	Video r_parabola_result = r_k_parabol.run();
+	r_parabola_result.writeDAE("../../output/DAE_files/", "R_K_Parabola");
+	r_parabola_result.writeOBJ("../../output/OBJ_files/", "R_K_Parabola", false);
+
+	*/
+
+	/*
+	vector<Keyframe> video_k;
+
+	Line line = Line(Keyframe(0,0,0,0), Keyframe(100,0,10,10));
+	Video video_l(line.getVideo());
+	video_l.writeDAE("../../output/DAE_files/", "Line");
+
+	// create a 2D array to compute the kalman filter
+	for (int i = 0; i < video_l.getVideo().size(); i+=10) {
+		std::vector<Keyframe> tmp = {video_l.getVideo()[i]};
+		video_k.push_back(tmp);
+	}
+
+
+	KFilter k_line(1.0/30.0, video_k);
+	Video r_line_result = k_line.run();
+	r_line_result.writeDAE("../../output/DAE_files/", "K_Line");
+	r_line_result.writeOBJ("../../output/OBJ_files/", "K_Line", false);
+
+	line.randomize(0.2);
+	video_l = line.getVideo();
+	video_l.writeDAE("../../output/DAE_files/", "R_Line");
+
+	video_k.clear();
+	// create a 2D array to compute the kalman filter
+	for (int i = 0; i < video_l.getVideo().size(); i+= 3) {
+		std::vector<Keyframe> tmp = {video_l.getVideo()[i]};
+		video_k.push_back(tmp);
+	}
+
+	KFilter k_r_line(1.0/30.0, video_k);
+	Video k_r_line_result = k_r_line.run();
+	k_r_line_result.writeDAE("../../output/DAE_files/", "K_R_Line");
+	k_r_line_result.writeOBJ("../../output/OBJ_files/", "K_R_Line", false);
+	*/
+
+};
