@@ -8,8 +8,6 @@ This is the repository of my semester project at [EPFL](www.epfl.ch). It contain
 The goal of this project was to create a score detecting system using the PlayfulVision tracking algorithm output
 to determine if a basket has been scored.
 
-This repository contains all the code and documentation of a semester project at [EPFL](www.epfl.ch). The goal was to achieve real-time people tracking and identification in sports. All the code and documentation is available under [this](LICENSE) license.
-
 ### Results
 
 [![Video of project](https://i.vimeocdn.com/video/550646725_640.jpg)](https://vimeo.com/151012795)
